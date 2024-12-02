@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer utilities {
+  .backdrop-blur-sm {
+    backdrop-filter: blur(8px);
+  }
+  
+  .backdrop-blur-md {
+    backdrop-filter: blur(12px);
+  }
+  
+  /* Style select dropdowns */
+  select option {
+    background-color: rgba(26, 26, 26, 0.9);
+    color: white;
+    padding: 0.5rem 1rem;
+  }
+  
+  select option:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
